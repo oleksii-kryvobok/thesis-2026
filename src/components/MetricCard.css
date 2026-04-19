@@ -1,0 +1,29 @@
+.metric-card {
+    background: var(--bg-primary);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 16px 18px;
+}
+  
+.metric-label {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+  
+.metric-value {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+  
+.metric-change {
+    font-size: 11px;
+    margin-top: 5px;
+}
+  
+.metric-change.up   { color: var(--green); }
+.metric-change.down { color: var(--red); }
+.metric-change.neutral { color: var(--text-hint); }
