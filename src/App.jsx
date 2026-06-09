@@ -17,7 +17,7 @@ function Layout({title, children}) {
       <div className="app-main">
         <Topbar
           title={title}
-          subtitle="2025/26 Semester 2"
+          subtitle="2025/26 навчальний рік - 2 семестр"
         />
         <main className="app-content">{children}</main>
       </div>
@@ -31,19 +31,19 @@ export default function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={
-          <ProtectedRoute><Layout title="Dashboard"><Dashboard /></Layout></ProtectedRoute>
+          <ProtectedRoute><Layout title="Головна панель"><Dashboard /></Layout></ProtectedRoute>
           } />
         <Route path="/students" element={
-          <ProtectedRoute><Layout title="Students"><Students /></Layout></ProtectedRoute>
+          <ProtectedRoute><Layout title="Студенти"><Students /></Layout></ProtectedRoute>
           } />
         <Route path="/students/:id" element={
-          <ProtectedRoute><Layout title="Students"><StudentProfile /></Layout></ProtectedRoute>
+          <ProtectedRoute><Layout title="Студенти"><StudentProfile /></Layout></ProtectedRoute>
           } />
         <Route path="/trends" element={
-          <ProtectedRoute><Layout title="Grade dynamics"><Trends /></Layout></ProtectedRoute>
+          <ProtectedRoute><Layout title="Динаміка груп"><Trends /></Layout></ProtectedRoute>
           } />
         <Route path="/groups" element={
-          <ProtectedRoute><Layout title="Group comparison"><Groups /></Layout></ProtectedRoute>
+          <ProtectedRoute><Layout title="Порівняння груп"><Groups /></Layout></ProtectedRoute>
           } />
       </Routes>
     </BrowserRouter>
