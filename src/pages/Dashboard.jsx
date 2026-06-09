@@ -72,7 +72,7 @@ export default function Dashboard() {
                 <span className="card-title">Середній бал по групах</span>
               </div>
               {groupChartData.length === 0
-                ? <p style={{ color: 'var(--text-hint)', fontSize: 13 }}>Немає даних — додайте оцінки</p>
+                ? <p style={{ color: 'var(--text-hint)', fontSize: 13 }}>Немає даних - додайте оцінки</p>
                 : <ResponsiveContainer width="100%" height={220}>
                     <BarChart data={groupChartData} barSize={32}>
                       <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.06)" vertical={false} />
@@ -113,7 +113,7 @@ export default function Dashboard() {
           {radarData.length > 0 && (
             <div className="card">
               <div className="card-header">
-                <span className="card-title">Успішність по предметах (загальна)</span>
+                <span className="card-title">Загальна успішність по предметах</span>
               </div>
               <ResponsiveContainer width="100%" height={220}>
                 <RadarChart data={radarData}>
