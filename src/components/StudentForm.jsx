@@ -77,7 +77,7 @@ export default function StudentForm({ initial, onSubmit, onCancel, submitLabel }
           <label className="form-label">Група *</label>
           <input className={`form-input ${errors.group_code ? 'input-error' : ''}`}
             value={form.group_code} onChange={e => set('group_code', e.target.value)}
-            placeholder="напр. КН-31" />
+            placeholder="ПД-44" />
           {errors.group_code && <span className="form-error">{errors.group_code}</span>}
         </div>
   
