@@ -65,7 +65,7 @@ export default function Groups() {
         <div className="card">
           <div className="card-header"><span className="card-title">Середній бал по предметах</span></div>
           {subjectData.length === 0
-            ? <p style={{ color: 'var(--text-hint)', fontSize: 13 }}>Немає даних — додайте оцінки</p>
+            ? <p style={{ color: 'var(--text-hint)', fontSize: 13 }}>Немає даних - додайте оцінки</p>
             : <ResponsiveContainer width="100%" height={260}>
                 <BarChart data={subjectData} barSize={28}>
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.06)" vertical={false} />
