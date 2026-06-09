@@ -93,8 +93,8 @@ export default function Students() {
     }
   }
 
-    if (loading) return <div className="page-loading">Loading students...</div>
-    if (error) return <div className="page-error">Error: {error}</div>
+    if (loading) return <div className="page-loading">Завантаження студентів...</div>
+    if (error) return <div className="page-error">Помилка: {error}</div>
 
     return (
       <div className="students-page">
@@ -195,16 +195,16 @@ export default function Students() {
         )}
   
         {credentials && (
-          <Modal title="Студента створено — доступи" onClose={() => setCredentials(null)}>
+          <Modal title="Студента створено - дані" onClose={() => setCredentials(null)}>
             <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              Збережіть ці дані — пароль більше не буде показано.
+              Збережіть ці дані - їх більше не буде показано.
             </p>
             <div className="credentials-box">
               <div className="cred-row"><span>Email</span><strong>{credentials.email}</strong></div>
               <div className="cred-row"><span>Пароль</span><strong>{credentials.password}</strong></div>
             </div>
             <div className="form-actions" style={{ marginTop: 8 }}>
-              <button className="btn-primary" onClick={() => setCredentials(null)}>Зрозуміло</button>
+              <button className="btn-primary" onClick={() => setCredentials(null)}>ОК</button>
             </div>
           </Modal>
         )}
