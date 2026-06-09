@@ -15,7 +15,7 @@ export default function StudentProfile() {
     const { id } = useParams()
     const navigate = useNavigate()
     const { students, grades, loading } = useStudents()
-    if (loading) return <div className="page-loading">Loading...</div>
+    if (loading) return <div className="page-loading">Завантаження...</div>
     const student = students.find(s => s.id === id)
     //const details = studentDetails[Number(id)]
 
