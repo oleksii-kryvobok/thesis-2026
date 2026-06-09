@@ -28,7 +28,7 @@ export default function Login() {
     return (
       <div className="login-page">
         <div className="login-card">
-          <div className="login-logo">АналітикаУС</div>
+          <div className="login-logo">SDF</div>
           <div className="login-sub">Система аналітики успішності студентів</div>
   
           <div className="login-form">
