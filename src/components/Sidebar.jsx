@@ -2,18 +2,18 @@ import { NavLink } from 'react-router-dom'
 import './Sidebar.css'
 
 const nav = [
-    { to: '/', label: 'Dashboard', icon: <IconGrid /> },
-    { to: '/students', label: 'Students', icon: <IconUsers /> },
-    { to: '/trends', label: 'Grade Trends', icon: <IconTrend /> },
-    { to: '/groups', label: 'Group Comparison', icon: <IconBars /> },
+    { to: '/', label: 'Головна панель', icon: <IconGrid /> },
+    { to: '/students', label: 'Студенти', icon: <IconUsers /> },
+    { to: '/trends', label: 'Динаміка груп', icon: <IconTrend /> },
+    { to: '/groups', label: 'Порівняння груп', icon: <IconBars /> },
 ]
 
 export default function Sidebar() {
     return (
         <aside className="sidebar">
             <div className="sidebar-logo">
-                <span className="logo-text">Analytics</span>
-                <span className="logo-text">Student</span>
+                <span className="logo-text">SDF</span>
+                <span className="logo-text">Адміністратор</span>
             </div>
             <nav className="sidebar-nav">
                 {nav.map(item => (
